@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АС-УчЭнерг — Система учёта и анализа электроэнергии</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        h1, h2, h3 {
+            color: #1e3a8a;
+        }
+        section {
+            margin-bottom: 2rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        ul, ol {
+            margin-left: 1.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #eef2ff;
+            color: #4b5563;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>АС-УчЭнерг</h1>
+    <p>Автоматизированная система учёта и анализа электроэнергии</p>
+</header>
+
+<div class="container">
+
+    <section>
+        <h2>О проекте</h2>
+        <p>
+            Проект «АС-УчЭнерг» разработан студентами Уфимского университета науки и технологий в рамках проекта по дисциплине
+            «Администрирование информационных систем». Цель — создание клиент-серверной системы с полным жизненным циклом,
+            охватывающей этапы от анализа требований до реализации и оценки качества.
+        </p>
+    </section>
+
+    <section>
+        <h2>Актуальность</h2>
+        <ul>
+            <li><strong>Энергоэффективность:</strong> контроль потребления, выявление аномалий и несанкционированного использования.</li>
+            <li><strong>Экономия ресурсов:</strong> оптимизация затрат на электроэнергию и использование выгодных тарифов.</li>
+            <li><strong>Юридическая прозрачность:</strong> соответствие требованиям законодательства и упрощение отчётности.</li>
+            <li><strong>Управление:</strong> оперативный доступ к данным и аналитике для принятия решений.</li>
+            <li><strong>Удобство для пользователей:</strong> личный кабинет, прозрачные расчёты и история потребления.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Функциональные возможности</h2>
+        <h3>По ролям:</h3>
+        <ul>
+            <li><strong>Арендатор/жилец:</strong>
+                <ul>
+                    <li>Просмотр истории показаний и начислений</li>
+                    <li>Просмотр текущего тарифа</li>
+                </ul>
+            </li>
+            <li><strong>Бухгалтер/управляющий:</strong>
+                <ul>
+                    <li>Просмотр всех показаний</li>
+                    <li>Изменение тарифов</li>
+                    <li>Формирование отчётов</li>
+                </ul>
+            </li>
+            <li><strong>Администратор:</strong>
+                <ul>
+                    <li>Полный CRUD-доступ ко всем сущностям: пользователи, здания, счётчики и т.д.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Технологический стек</h2>
+        <ul>
+            <li><strong>Бэкенд:</strong> Python, Flask, SQLAlchemy</li>
+            <li><strong>База данных:</strong> MySQL</li>
+            <li><strong>Фронтенд:</strong> HTML5, CSS3, JavaScript (GUI-клиент на PyQt6)</li>
+            <li><strong>Инфраструктура:</strong> Docker, Docker Compose</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Архитектура и моделирование</h2>
+        <ul>
+            <li>Моделирование бизнес-процессов: IDEF0, IDEF3</li>
+            <li>Проектирование архитектуры: UML (диаграммы прецедентов, классов, последовательности, состояний)</li>
+            <li>Клиент-серверная архитектура с RESTful API</li>
+            <li>Ролевая система доступа и аутентификация</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Результаты тестирования</h2>
+        <ul>
+            <li><strong>Функциональность:</strong> реализовано 100% требований из ТЗ</li>
+            <li><strong>Надёжность:</strong> коэффициент готовности — 99.84%</li>
+            <li><strong>Нагрузочное тестирование (Locust):</strong> стабильная работа при 20 параллельных пользователях</li>
+            <li><strong>Стресс-тест:</strong> точка отказа — свыше 200 пользователей</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Оценка качества</h2>
+        <table style="width:100%; border-collapse: collapse; margin-top: 1rem;">
+            <thead>
+                <tr style="background-color: #dbeafe;">
+                    <th style="padding: 0.5rem; border: 1px solid #93c5fd;">Характеристика</th>
+                    <th style="padding: 0.5rem; border: 1px solid #93c5fd;">Оценка</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Функциональная пригодность</td><td>Хорошо</td></tr>
+                <tr><td>Надёжность</td><td>Отлично</td></tr>
+                <tr><td>Удобство использования</td><td>Хорошо</td></tr>
+                <tr><td>Сопровождаемость</td><td>Хорошо</td></tr>
+                <tr><td>Производительность</td><td>Хорошо</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Рекомендации по улучшению</h2>
+        <ul>
+            <li>Улучшение UI/UX: современный дизайн, интуитивная навигация</li>
+            <li>Упрощение типовых операций</li>
+            <li>Расширение документации и комментариев в коде</li>
+            <li>Оптимизация производительности и масштабируемости</li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2025 Уфимский университет науки и технологий<br>
+    Авторы: Валиева А.Р., Груздева Е.А.<br>
+    Научный руководитель: Сазонова Е.Ю..</p>
+</footer>
+
+</body>
+</html>
